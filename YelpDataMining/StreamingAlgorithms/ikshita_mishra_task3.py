@@ -8,10 +8,10 @@ sc = SparkContext(appName="Twitter Streaming")
 sc.setLogLevel("ERROR")
 sc.setLogLevel(logLevel="OFF")
 
-cK = "3y2bHoP2pfxZQBdSeupMJVfSf"
-cS = "vjlrJ0hsMXl0QHiAPoVWETjWtfmCLiPAbxGwykiyZ4N35AE5xv"
-aK = "1033449764795297794-oWXvn9Z00mxcEMVArRBGeAJDyaqRXa"
-aS = "f41twxE2QhobND1VGaBTNIuBbkKQivQttaqa6NEczcyao"
+cK = ""
+cS = ""
+aK = ""
+aS = ""
 
 auth = tweepy.OAuthHandler(cK, cS)
 auth.set_access_token(aK, aS)
