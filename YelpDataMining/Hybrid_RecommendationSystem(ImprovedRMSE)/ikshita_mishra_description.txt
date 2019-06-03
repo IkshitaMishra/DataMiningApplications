@@ -1,0 +1,15 @@
+Method Description:
+The objective of this project was to implement both collaborative filtering, “Alternating Least Squares (ALS) Matrix Factorizationa and Singular Value Decomposition (SVD) Matrix Factorization recommendation system. Both the algorithm are used to compute low-rank matrix factorization. SVD gives a value of zero to unknown entries. In the project, the recommender predicts the unknown business rating from a user. I calculated the weighted scores of predicted rating of intersected user-business candidates between both the recommender models. Thus, made a Hybrid Recommendation of ALS and SVD with Root Mean Square of 0.9998764750184312, which is lower than < 1.0 baseline. I used surprise python package for this implementation. The two modules used were Surprise BaselineOnly= “als” with parameters 'n_epochs': 94,'reg_u': 6,'reg_i': 4. These were given intuitively to increase the accuracy and lower the rise value. The other approach was SVD with parameters n_factors=105,n_epochs=55, lr_all=0.005, reg_all=0.21. The weighted average of the both model were In ratio is (als:svd) 0.9:0.1. Thus the rmse was lowered to was 00.9998764750184312
+
+Error Distribution:
+>=0 and <1: 100328
+>=1 and <2: 34242
+>=2 and <3: 6636
+>=3 and <4: 836
+>=4: 2
+
+RSME:
+0.9998764750184312
+
+Execution Time:
+115.48446393013s
