@@ -81,10 +81,10 @@ object ikshita_mishra_task3 {
     val sc = new SparkContext(spark)
     sc.setLogLevel(logLevel = "OFF")
 
-    System.setProperty("twitter4j.oauth.consumerKey", "3y2bHoP2pfxZQBdSeupMJVfSf")
-    System.setProperty("twitter4j.oauth.consumerSecret", "vjlrJ0hsMXl0QHiAPoVWETjWtfmCLiPAbxGwykiyZ4N35AE5xv")
-    System.setProperty("twitter4j.oauth.accessToken", "1033449764795297794-oWXvn9Z00mxcEMVArRBGeAJDyaqRXa")
-    System.setProperty("twitter4j.oauth.accessTokenSecret", "f41twxE2QhobND1VGaBTNIuBbkKQivQttaqa6NEczcyao")
+    System.setProperty("twitter4j.oauth.consumerKey", "")
+    System.setProperty("twitter4j.oauth.consumerSecret", "")
+    System.setProperty("twitter4j.oauth.accessToken", "")
+    System.setProperty("twitter4j.oauth.accessTokenSecret", "")
 
     val ssc = new StreamingContext(sc, Seconds(1))
     val tw = TwitterUtils.createStream(ssc, None, Array("Paris"))
